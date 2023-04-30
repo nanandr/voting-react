@@ -1,0 +1,204 @@
+::selection{
+    background: rgb(53, 192, 53);
+    color: white !important;
+}
+@media (max-width: 1080px) {
+    header{
+        width: 100% !important;
+        padding: 0px !important;
+    }
+    nav{
+        width: 90% !important;
+        padding: 0px !important;
+    }
+    h1{
+        font-size: 48px !important;
+        line-height: 52px !important;
+    }
+    .container {
+      min-width: 100% !important;
+      padding: 0 16px;
+    }
+    .nav-right{
+        display: none;
+    }
+}
+
+html{
+    height: 100%;
+}
+body{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+    background-image: url("https://d25oniaj7o2jcw.cloudfront.net/full-illustration-desktop-20220802@2x.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background: cover;
+    overflow-x: hidden;
+}
+main{
+    width: 100%;
+}
+h1, h2, h3, a, p{
+    margin: 0px;
+    text-decoration: none;
+    color: #333;
+}
+h1{
+    font-size: 64px;
+    line-height: 72px;
+}
+h2{
+    color: rgb(53, 192, 53);
+}
+a{
+    color: #333;
+}
+a:active{
+    color: rgb(53, 192, 53);
+}
+a.active{
+    background: rgb(53, 192, 53);
+    color: white;
+    border: solid 2px white;
+}
+a.active:hover{
+    background: white;
+    color: rgb(53, 192, 53);
+    border: solid 2px rgb(53, 192, 53);
+}
+header{
+    position: fixed;
+    left: 50%;
+    width: 1080px;
+    transform: translate(-50%, 0%);
+    display: flex;
+    padding: 0px;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0 auto;
+    transition: width 0.5s ease, border-radius 1s ease, top 0.2s ease;
+    background: white;
+    box-shadow: rgba(189, 189, 189, 0.425) 1px 1px 2px;
+    opacity: 0;
+    animation: fade-in 1s forwards;
+}
+header.active{
+    top: 0;
+    width: 100%;
+    border-radius: 0px;
+}
+header.none{
+    width: 1080px;
+    border-radius: 32px;
+    top: 16px;
+}
+nav, nav div{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 16px;
+}
+nav{
+    width: 1080px;
+    padding: 8px 18px;
+    justify-content: center;
+}
+main{
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+footer{
+    background: #eee;
+    text-align: center;
+    padding: 16px 0px;
+}
+footer a{
+    color: rgb(53, 192, 53) !important;
+}
+
+.nav-right{
+    margin-left: auto;
+}
+.nav-brand{
+    padding-bottom: 5px;
+}
+.nav-link{
+    padding: 5px 16px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+.nav-link:hover{
+    background: rgba(189, 189, 189, 0.425);
+}
+.btn{
+    background: rgb(53, 192, 53);
+    color: white;
+    border: solid 2px rgb(53, 192, 53);
+}
+.btn:hover{
+    background: white;
+    color: rgb(53, 192, 53);
+    border: solid 2px rgb(53, 192, 53);
+    cursor: pointer;
+}
+.banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 780px;
+    width: 100vw;
+    padding-top: 72px;
+    color: #346 !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.banner button{
+    border: 2px solid white;
+    padding: 12px 32px;
+    border-radius: 24px;
+    box-shadow: rgba(189, 189, 189, 0.425) 1px 1px 20px;
+    background: white !important;
+}
+.banner button:hover{
+    background: rgb(53, 192, 53) !important;
+}
+.banner button:hover h2{
+    color: white !important;
+}
+.container{
+    height: 80vh;
+    min-width: 1080px;
+    margin: 0 auto;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
